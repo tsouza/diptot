@@ -1,0 +1,43 @@
+{
+  "name": "diptot",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "@types/bluebird": "^3.5.26",
+    "@types/lodash": "^4.14.122",
+    "@types/lru-cache": "^5.1.0",
+    "@types/minimist": "^1.2.0",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/pino": "^5.8.6",
+    "gts": "^0.9.0",
+    "typescript": "~3.1.0"
+  },
+  "bin": {
+    "diptot": "build/src/index.js"
+  },
+  "scripts": {
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "dependencies": {
+    "@slack/client": "^4.10.0",
+    "bluebird": "^3.5.3",
+    "comparator": "0.0.1",
+    "date-fns": "^2.0.0-alpha.27",
+    "date-fns-tz": "^1.0.7",
+    "handy-redis": "^1.5.2",
+    "inversify": "^5.0.1",
+    "javascript-time-ago": "^2.0.1",
+    "lodash": "^4.17.11",
+    "lru-cache": "^5.1.1",
+    "minimist": "^1.2.0",
+    "pino": "^5.12.0",
+    "redis": "^2.8.0",
+    "reflect-metadata": "^0.1.13"
+  }
+}
